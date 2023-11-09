@@ -112,6 +112,8 @@ const aa = basee;
 btn.addEventListener('click',(e)=>{
     e.preventDefault();
     storeUser(userName.value,email.value)
+    userName.value ='';
+    email.value = '';
 })
 window.onload = function() {
     getNewsletter()

@@ -49,3 +49,80 @@ input{
 .newsletterInfo>h2,.specialOffers{
     color: rgb(54, 185, 54);;
 }
+@media screen and (max-width:768px) {
+    .newsletter{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+    .newsletterInfo{
+        margin-bottom: 20px;
+        margin-left: -90px;
+
+    }
+}
+@media screen and (max-width:425px) {
+    .newsletter{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+    .newsletterInfo{
+        margin-bottom: 20px;
+        margin-left: 0px;
+        padding: 8px;
+
+    }
+    input{
+        padding: 8px;
+        border: none;
+        border-radius:5px;
+        width: 340px;
+    }
+    .inputNom{
+        width: 340px;
+        margin-bottom: 20px;
+    }
+    .newsletterInfo>h2,.specialOffers{
+        color: rgb(54, 185, 54);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .btn{
+        padding: 8px;
+    }
+}
+@media screen and (max-width:425px) {
+    .newsletter{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+    .newsletterInfo{
+        margin-bottom: 20px;
+        margin-left: 0px;
+        padding: 8px;
+
+    }
+    input{
+        padding: 8px;
+        border: none;
+        border-radius:5px;
+        width: 290px;
+    }
+    .inputNom{
+        width: 290px;
+        margin-bottom: 20px;
+    }
+    .newsletterInfo>h2,.specialOffers{
+        color: rgb(54, 185, 54);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .btn{
+        padding: 8px;
+    }
+}
