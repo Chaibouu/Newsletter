@@ -7,12 +7,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(23, 38, 97);
+    /* background-color: rgb(23, 38, 97); */
 }
 main{
     width: 1024px;
     height: 100vh;
-    background-color: aqua;
+    /* background-color: aqua; */
     position: relative;
 }
 .newsletter{
@@ -28,4 +28,21 @@ input{
     padding: 6px;
     border: none;
     border-radius:5px;
+    width: 220px;
+}
+.inputNom{
+    width: 150px;
+}
+.inputContainer{
+    position: relative;
+}
+.btn{
+    position: absolute;
+    padding: 6px;
+    border: none;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    right: 0;
+    background-color:rgb(54, 185, 54);
+    cursor: pointer;
 }
