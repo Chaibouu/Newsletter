@@ -90,6 +90,7 @@
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
+    let basee=[];
     // function pour envoyer les données sur firebase
     async function storeUser(name,email) {
         await addDoc(collection(db, "newsletter"), {
@@ -101,14 +102,18 @@
     async function getNewsletter() {
         const querySnapshot = await getDocs(collection(db, "newsletter"));
         querySnapshot.forEach((doc) => {
+            basee.push(doc.data().email)
             // doc.data() is never undefined for query doc snapshots
             console.log(doc.data().email);
         });
     }
-
+// console.log(basee);
+const aa = basee;
 btn.addEventListener('click',(e)=>{
     e.preventDefault();
     storeUser(userName.value,email.value)
+
+    console.log(basee);
 })
 window.onload = function() {
     getNewsletter()
