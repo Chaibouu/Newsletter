@@ -24,6 +24,11 @@ let btn = document.querySelector('#btn')
   const app = initializeApp(firebaseConfig);
   const db = getDatabase(app)
   const analytics = getAnalytics(app);
-btn.addEventListener('click',()=>{
-    set(ref(db, 'user/' + userName.value))
+btn.addEventListener('click',(e)=>{
+    set(ref(db, 'user/' + userName.value),
+    {
+        userName :  userName.value,
+        email : email.value,
+    });
+    alert('Login Sucessfull!!!')
 })
