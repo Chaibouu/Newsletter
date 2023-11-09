@@ -1,4 +1,6 @@
-let btn = document.querySelector('.btn')
+let email = document.querySelector('#email')
+let userName = document.querySelector('#userName')
+let btn = document.querySelector('#btn')
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
   import { getDatabase,ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-dataBase.js";
@@ -23,5 +25,5 @@ let btn = document.querySelector('.btn')
   const db = getDatabase(app)
   const analytics = getAnalytics(app);
 btn.addEventListener('click',()=>{
-    
+    set(ref(db, 'user/' + userName.value))
 })
