@@ -46,3 +46,6 @@ input{
     background-color:rgb(54, 185, 54);
     cursor: pointer;
 }
+.newsletterInfo>h2,.specialOffers{
+    color: rgb(54, 185, 54);;
+}
